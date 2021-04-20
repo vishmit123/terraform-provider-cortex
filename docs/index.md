@@ -24,6 +24,6 @@ provider "cortex" {
 
 ### Optional
 
-- **address** (String) Address of the Cortex cluster
-- **api_key** (String, Sensitive) API key, used as basic auth password.
-- **tenant_id** (String) Tenant ID, passed as X-Org-ScopeID HTTP header.
+- **address** (String) The root URL of Cortex cluster. May alternatively be set via the `CORTEX_ADDRESS` environment variable.
+- **api_key** (String, Sensitive) API key, used as basic auth password. May alternatively be set via the `CORTEX_API_KEY` environment variable.
+- **tenant_id** (String) The Tenant ID, passed as X-Org-ScopeID HTTP header. May alternatively be set via the `CORTEX_TENANT_ID` environment variable.

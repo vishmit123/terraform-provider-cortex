@@ -35,7 +35,10 @@ EOT
 
 ### Optional
 
-- **id** (String) The ID of this resource.
 - **tenant_id** (String) Tenant ID, passed as X-Org-ScopeID HTTP header. If empty, the provider tenant ID is used.
+
+### Read-Only
+
+- **id** (String) The ID of the rule group.
 
 
