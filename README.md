@@ -1,10 +1,10 @@
 # Terraform Provider Cortex
 
-[![Latest release](https://img.shields.io/github/v/release/inuits/terraform-provider-cortex)](https://github.com/inuits/terraform-provider-cortex/releases)
+[![Latest release](https://img.shields.io/github/v/release/vishmit123/terraform-provider-cortex)](https://github.com/vishmit123/terraform-provider-cortex/releases)
 
 This provider enables the provisioning of [cortex](https://cortexmetrics.io).
 
-- [Documentation](https://registry.terraform.io/providers/inuits/cortex/latest/docs)
+- [Documentation](https://registry.terraform.io/providers/vishmit123/cortex/latest/docs)
 
 ## Building the provider
 
