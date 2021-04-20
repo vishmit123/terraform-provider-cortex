@@ -17,6 +17,11 @@ func resourceAlertmanager() *schema.Resource {
 		UpdateContext: resourceAlertsCreate,
 		DeleteContext: resourceAlertsDelete,
 		Schema: map[string]*schema.Schema{
+			"id": {
+				Description: "The ID of the alertmanager config resource.",
+				Type:        schema.TypeString,
+				Computed:    true,
+			},
 			"tenant_id": &schema.Schema{
 				Description: "Tenant ID, passed as X-Org-ScopeID HTTP header. If empty, the provider tenant ID is used.",
 				Type:        schema.TypeString,
@@ -27,6 +32,7 @@ func resourceAlertmanager() *schema.Resource {
 				Type:        schema.TypeString,
 				Description: "Content of the alertmanager configuration.",
 				Required:    true,
+				Sensitive:   true,
 				DiffSuppressFunc: func(k, old, new string, d *schema.ResourceData) bool {
 					olds, err := formatYAML(old)
 					if err != nil {
